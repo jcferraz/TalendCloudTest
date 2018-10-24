@@ -110,7 +110,7 @@
     <routinesParameter id="_NwrGYNdiEeiLh7n7B9eI-A" name="DqStringHandling"/>
     <routinesParameter id="_Nw-BWddiEeiLh7n7B9eI-A" name="DQTechnical"/>
   </parameters>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Cloud Test Git 1&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
