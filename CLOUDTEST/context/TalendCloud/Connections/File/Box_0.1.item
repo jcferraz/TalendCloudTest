@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_f8WK0NedEeiNar4E3rjqVA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_f8WK0dedEeiNar4E3rjqVA" comment="" name="connection_box_client_key" prompt="connection_box_client_key?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_f8WK0tedEeiNar4E3rjqVA" comment="" name="connection_box_client_secret" prompt="connection_box_client_secret?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_f8WK09edEeiNar4E3rjqVA" comment="" name="connection_box_access_token" prompt="connection_box_access_token?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_f8WK1NedEeiNar4E3rjqVA" comment="" name="connection_box_refresh_token" prompt="connection_box_refresh_token?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

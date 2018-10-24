@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_f6qIwNedEeiNar4E3rjqVA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_f6qIwdedEeiNar4E3rjqVA" comment="" name="connection_hbase_zookeeper_quorum" prompt="connection_hbase_zookeeper_quorum?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_f6qIwtedEeiNar4E3rjqVA" comment="" name="connection_hbase_zookeeper_client_port" prompt="connection_hbase_zookeeper_client_port?" promptNeeded="false" type="id_String" value="2181"/>
+    <contextParameter xmi:id="_f6qIw9edEeiNar4E3rjqVA" comment="" name="connection_hbase_zookeeper_znode_parent" prompt="connection_hbase_zookeeper_znode_parent?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_f6qIxNedEeiNar4E3rjqVA" confirmationNeeded="false" name="Studio">
+    <contextParameter xmi:id="_f6qIxdedEeiNar4E3rjqVA" comment="" name="connection_hbase_zookeeper_quorum" prompt="connection_hbase_zookeeper_quorum?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_f6qIxtedEeiNar4E3rjqVA" comment="" name="connection_hbase_zookeeper_client_port" prompt="connection_hbase_zookeeper_client_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_f6qIx9edEeiNar4E3rjqVA" comment="" name="connection_hbase_zookeeper_znode_parent" prompt="connection_hbase_zookeeper_znode_parent?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

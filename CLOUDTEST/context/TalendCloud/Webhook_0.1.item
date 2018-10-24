@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_f_WbgNedEeiNar4E3rjqVA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_f_WbgdedEeiNar4E3rjqVA" comment="Use this context parameter if flow can be started outside TIC - webhook" name="resource_webhook_payload" prompt="resource_webhook_payload?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
