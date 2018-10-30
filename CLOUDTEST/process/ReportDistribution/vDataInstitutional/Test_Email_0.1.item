@@ -134,7 +134,7 @@
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Component Email &quot; + ((Integer)globalMap.get(&quot;tLoop_1_CURRENT_VALUE&quot;)) + &quot; End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#x9;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
