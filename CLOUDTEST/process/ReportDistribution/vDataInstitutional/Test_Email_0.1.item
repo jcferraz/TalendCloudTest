@@ -118,7 +118,7 @@
   </parameters>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Manual Email Start: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;&#xA;Properties props = new Properties();&#xA;props.setProperty(&quot;mail.transport.protocol&quot;, &quot;smtp&quot;);&#xA;props.setProperty(&quot;mail.smtp.host&quot;, &quot;smtp.gmail.com&quot;);&#xA;props.setProperty(&quot;mail.smtp.starttls.enable&quot;, &quot;true&quot;);&#xA;props.setProperty(&quot;mail.smtp.auth&quot;, &quot;true&quot;); &#xA;props.setProperty(&quot;mail.smtp.port&quot;, &quot;587&quot;);&#xA;props.setProperty(&quot;mail.user&quot;, &quot;josecarlos.ferraz@keensoft.es&quot;);&#xA;props.setProperty(&quot;mail.password&quot;, context.Password);&#xA;&#xA;Session mailSession = Session.getDefaultInstance(props, null);&#xA;System.out.println(&quot;Session created: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;Transport transport = mailSession.getTransport(&quot;smtp&quot;);&#xA;System.out.println(&quot;Transport created: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;&#xA;MimeMessage message = new MimeMessage(mailSession);&#xA;message.setFrom(new InternetAddress(&quot;josecarlos.ferraz@keensoft.es&quot;));&#xA;message.setSubject(&quot;Testing javamail html&quot;);&#xA;message.setContent(&quot;This is a test &lt;b>HOWTO&lt;b>&quot;, &quot;text/html; charset=ISO-8859-15&quot;);&#xA;message.addRecipient(Message.RecipientType.TO,new InternetAddress(&quot;josecarlos.ferraz@ust-global.com&quot;));&#xA;&#xA;transport.connect(&quot;smtp.gmail.com&quot;,587,&quot;josecarlos.ferraz@keensoft.es&quot;,context.Password);&#xA;System.out.println(&quot;Transport connected: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 1 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 2 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 3 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 4 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.close();&#x9;&#xA;System.out.println(&quot;Transport closed: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;&#xA;System.out.println(&quot;Manual Email End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;   "/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Manual Email Start: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;&#xA;Properties props = new Properties();&#xA;props.setProperty(&quot;mail.transport.protocol&quot;, &quot;smtp&quot;);&#xA;props.setProperty(&quot;mail.smtp.host&quot;, &quot;smtp.gmail.com&quot;);&#xA;props.setProperty(&quot;mail.smtp.starttls.enable&quot;, &quot;true&quot;);&#xA;props.setProperty(&quot;mail.smtp.auth&quot;, &quot;true&quot;); &#xA;props.setProperty(&quot;mail.smtp.port&quot;, &quot;587&quot;);&#xA;props.setProperty(&quot;mail.user&quot;, &quot;josecarlos.ferraz@keensoft.es&quot;);&#xA;props.setProperty(&quot;mail.password&quot;, context.Password);&#xA;&#xA;Session mailSession = Session.getDefaultInstance(props, null);&#xA;System.out.println(&quot;Session created: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;Transport transport = mailSession.getTransport(&quot;smtp&quot;);&#xA;System.out.println(&quot;Transport created: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;&#xA;MimeMessage message = new MimeMessage(mailSession);&#xA;message.setFrom(new InternetAddress(&quot;josecarlos.ferraz@keensoft.es&quot;));&#xA;message.setSubject(&quot;Testing javamail html&quot;);&#xA;message.setContent(&quot;This is a test &lt;b>HOWTO&lt;b>&quot;, &quot;text/html; charset=ISO-8859-15&quot;);&#xA;message.addRecipient(Message.RecipientType.TO,new InternetAddress(&quot;josecarlos.ferraz@ust-global.com&quot;));&#xA;&#xA;transport.connect(&quot;smtp.gmail.com&quot;,587,&quot;josecarlos.ferraz@keensoft.es&quot;,context.Password);&#xA;System.out.println(&quot;Transport connected: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 1 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 2 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 3 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 4 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 5 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 6 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 7 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 8 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 9 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.sendMessage(message,message.getRecipients(Message.RecipientType.TO));&#xA;System.out.println(&quot;Email 10 sent: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;transport.close();&#x9;&#xA;System.out.println(&quot;Transport closed: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;&#xA;System.out.println(&quot;Manual Email End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#xA;   "/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.Properties;  &#xA;import javax.mail.*; &#xA;import javax.mail.internet.*; "/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -134,7 +134,34 @@
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Component Email &quot; + ((Integer)globalMap.get(&quot;tLoop_1_CURRENT_VALUE&quot;)) + &quot; End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#x9;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="true"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="false"/>
+    <elementParameter field="TEXT" name="FROM" value="1"/>
+    <elementParameter field="TEXT" name="TO" value="10"/>
+    <elementParameter field="TEXT" name="STEP" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value="int i=0" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="i&lt;10" show="false"/>
+    <elementParameter field="TEXT" name="ITERATION" value="i++" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
     <elementParameter field="TEXT" name="TO" value="&quot;josecarlos.ferra@ust-global.com&quot;"/>
     <elementParameter field="TEXT" name="FROM" value="&quot;josecarlos.ferraz@keensoft.es&quot;"/>
@@ -142,7 +169,7 @@
     <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;NoReply-JD&quot;"/>
     <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SUBJECT" value="&quot;SimpleEmail Testing Subject 1&quot;"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;SimpleEmail Testing Subject &quot; + ((Integer)globalMap.get(&quot;tLoop_1_CURRENT_VALUE&quot;))"/>
     <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;SimpleEmail Testing Body&quot;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS"/>
@@ -164,150 +191,22 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSendMail_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Component Email 1 End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#x9;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_2"/>
-  </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;josecarlos.ferra@ust-global.com&quot;"/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;josecarlos.ferraz@keensoft.es&quot;"/>
-    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
-    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;NoReply-JD&quot;"/>
-    <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SUBJECT" value="&quot;SimpleEmail Testing Subject 2&quot;"/>
-    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;SimpleEmail Testing Body&quot;"/>
-    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
-    <elementParameter field="TABLE" name="ATTACHMENTS"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.gmail.com&quot;"/>
-    <elementParameter field="TEXT" name="SMTP_PORT" value="587"/>
-    <elementParameter field="CHECK" name="SSL" value="false"/>
-    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;josecarlos.ferraz@keensoft.es&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="WCwSaIU3lzl/zWVWz+Bfgg=="/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
-    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSendMail_2"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Component Email 2 End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#x9;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_4"/>
-  </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_3" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;josecarlos.ferra@ust-global.com&quot;"/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;josecarlos.ferraz@keensoft.es&quot;"/>
-    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
-    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;NoReply-JD&quot;"/>
-    <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SUBJECT" value="&quot;SimpleEmail Testing Subject 3&quot;"/>
-    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;SimpleEmail Testing Body&quot;"/>
-    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
-    <elementParameter field="TABLE" name="ATTACHMENTS"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.gmail.com&quot;"/>
-    <elementParameter field="TEXT" name="SMTP_PORT" value="587"/>
-    <elementParameter field="CHECK" name="SSL" value="false"/>
-    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;josecarlos.ferraz@keensoft.es&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="WCwSaIU3lzl/zWVWz+Bfgg=="/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
-    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSendMail_3"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Component Email 3 End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#x9;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_5"/>
-  </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_4" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;josecarlos.ferra@ust-global.com&quot;"/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;josecarlos.ferraz@keensoft.es&quot;"/>
-    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
-    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;NoReply-JD&quot;"/>
-    <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SUBJECT" value="&quot;SimpleEmail Testing Subject 4&quot;"/>
-    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;SimpleEmail Testing Body&quot;"/>
-    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
-    <elementParameter field="TABLE" name="ATTACHMENTS"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.gmail.com&quot;"/>
-    <elementParameter field="TEXT" name="SMTP_PORT" value="587"/>
-    <elementParameter field="CHECK" name="SSL" value="false"/>
-    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;josecarlos.ferraz@keensoft.es&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="WCwSaIU3lzl/zWVWz+Bfgg=="/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
-    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSendMail_4"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Component Email 4 End: &quot; + TalendDate.getDate(&quot;YYYY/MM/DD hh:mm:ss&quot;));&#x9;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_6"/>
-  </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSendMail_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tLoop_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tLibraryLoad_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tJava_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tSendMail_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSendMail_1" offsetLabelX="0" offsetLabelY="0" source="tSendMail_1" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tSendMail_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSendMail_2" offsetLabelX="0" offsetLabelY="0" source="tSendMail_2" target="tJava_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tSendMail_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSendMail_3" offsetLabelX="0" offsetLabelY="0" source="tSendMail_3" target="tJava_5">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tSendMail_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSendMail_4" offsetLabelX="0" offsetLabelY="0" source="tSendMail_4" target="tJava_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
@@ -326,42 +225,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_3" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_4" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
