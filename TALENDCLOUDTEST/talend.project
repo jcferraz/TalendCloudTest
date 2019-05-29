@@ -3,5 +3,5 @@
   <TalendProperties:Project xmi:id="_yva8wYBpEemHT80MCKWUqQ" label="TalendCloudTest" description="Test" language="java" technicalLabel="TALENDCLOUDTEST" author="_yva8woBpEemHT80MCKWUqQ" productVersion="Talend Cloud Real-Time Big Data Platform-7.1.1.20190228_0243-patch" url="{&quot;location&quot;:&quot;https://github.com/jcferraz/TalendCloudTest&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false">
     <migrationTask xmi:id="_y4agsIBpEemHT80MCKWUqQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
-  <TalendProperties:User xmi:id="_yva8woBpEemHT80MCKWUqQ" login="josecarlosferraz@ustglobalespana" firstName="Josecarlos" lastName="Ferraz" type="DQ"/>
+  <TalendProperties:User xmi:id="_yva8woBpEemHT80MCKWUqQ" login="josecarlosferraz@ustglobalespana" firstName="Jose carlos" lastName="Ferraz" type="DQ"/>
 </xmi:XMI>
