@@ -181,6 +181,10 @@
     <module>jobs/process/t01_Compo/Databases/InOut/Oracle/toracleoutput_0.1</module>
     <module>jobs/process/t01_Compo/DataQuality/tFuzzyMatch/directoryservice_0.1</module>
     <module>jobs/process/t01_Compo/ELT/Generic/generic_elt_step1_0.1</module>
+    <module>jobs/process/Examples/sayhello_0.1</module>
+    <module>jobs/process/Examples/getweather_0.1</module>
+    <module>jobs/joblets/jcloudlog_0.1</module>
+    <module>jobs/process/Examples/video_viewers_watch_results_log_filter_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALENDCLOUDTEST</talend.project.name>
