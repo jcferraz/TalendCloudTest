@@ -185,6 +185,7 @@
     <module>jobs/process/Examples/getweather_0.1</module>
     <module>jobs/joblets/jcloudlog_0.1</module>
     <module>jobs/process/Examples/video_viewers_watch_results_log_filter_0.1</module>
+    <module>../../REFERENCEPROJECT/poms</module>
   </modules>
   <properties>
     <talend.project.name>TALENDCLOUDTEST</talend.project.name>
